@@ -7,7 +7,7 @@ def parse(lines):
 
 
 def solve(data):
-    found = [0]
+    found = set([0])
     total = 0
     while True:
         for num in data:
@@ -15,4 +15,4 @@ def solve(data):
             if total in found:
                 return total
             else:
-                found.append(total)
+                found.add(total)
